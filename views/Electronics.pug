@@ -8,8 +8,12 @@ block content
         each electr, index in results
             .col-sm-2(onclick=`buy(${index})`)
               p Gadget: #{electr.Gadget}
-              p Price: #{electr.Price}
+              p Price : #{electr.Price}
               p Storage: #{electr.Storage}
+  script.
+    function buy(index) {
+      alert(`you purchased item ${index}`);
+    }
           
 
   
